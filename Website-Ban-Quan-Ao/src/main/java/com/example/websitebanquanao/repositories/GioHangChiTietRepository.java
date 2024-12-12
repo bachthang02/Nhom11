@@ -33,4 +33,6 @@ public interface GioHangChiTietRepository extends JpaRepository<GioHangChiTiet, 
 
     @Query("SELECT SUM(ghi.soLuong) FROM GioHangChiTiet ghi WHERE ghi.idKhachHang.id = :khachHangId")
     public Integer sumSoLuongByIdKhachHang(@Param("khachHangId") UUID khangHangId);
+
 }
+
