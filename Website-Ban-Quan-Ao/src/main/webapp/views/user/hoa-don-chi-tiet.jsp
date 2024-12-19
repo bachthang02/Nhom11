@@ -50,7 +50,7 @@
                 <c:if test="${hoaDon.ngayThanhToan == null && hoaDon.hinhThucThanhToan.ten == 'Chuyển khoản'}">
                     <div>
 <%--                        thay 1 =id để muốn chạy bình thường--%>
-                        <form action="/submit-payment/${1}" method="post">
+                        <form action="/submit-payment/${id}" method="post">
                             <c:choose>
                                 <c:when test="${hoaDon.trangThai == 5 || hoaDon.trangThai == 10}">
                                     <button type="submit" class="btn btn-success col-12" disabled>Xác nhận thanh toán
